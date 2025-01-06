@@ -12,15 +12,15 @@
        import { getDatabase, ref, get, update } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
        // Your web app's Firebase configuration
-       const firebaseConfig = {
-        apiKey: "YOUR_API_KEY",
-        authDomain: "YOUR_AUTH_DOMAIN",
-        databaseURL: "YOUR_DATABASE_URL",
-        projectId: "YOUR_PROJECT_ID",
-        storageBucket: "YOUR_STORAGE_BUCKET",
-        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-        appId: "YOUR_APP_ID"
-    };
+        const firebaseConfig = {
+            apiKey: "AIzaSyDAlth1sxiP-S3r3fVDXhwadVVnEvpdO6s",
+            authDomain: "login-egi-agan.firebaseapp.com",
+            databaseURL: "https://login-egi-agan-default-rtdb.firebaseio.com",
+            projectId: "login-egi-agan",
+            storageBucket: "login-egi-agan.firebasestorage.app",
+            messagingSenderId: "395059466114",
+            appId: "1:395059466114:web:5c6b0621e9739df6b5c99b"
+        }; 
     
 
        // Initialize Firebase
@@ -56,7 +56,7 @@
                        
                        // Redirect to login page if token is not found
                        setTimeout(() => {
-                           window.location.href = '/html/dashboard.html';
+                           window.location.href = '/html/loginfire.html';
                        }, 2000); // 2 seconds delay
                    } else {
                        console.log('Username or password does not match');
