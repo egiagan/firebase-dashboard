@@ -11,13 +11,13 @@ import { getDatabase, ref, get, update } from "https://www.gstatic.com/firebasej
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    databaseURL: "YOUR_DATABASE_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyDAlth1sxiP-S3r3fVDXhwadVVnEvpdO6s",
+    authDomain: "login-egi-agan.firebaseapp.com",
+    databaseURL: "https://login-egi-agan-default-rtdb.firebaseio.com",
+    projectId: "login-egi-agan",
+    storageBucket: "login-egi-agan.firebasestorage.app",
+    messagingSenderId: "395059466114",
+    appId: "1:395059466114:web:5c6b0621e9739df6b5c99b"
 };
 
 // Initialize Firebase
@@ -52,7 +52,7 @@ document.getElementById('change-user-btn').addEventListener('click', async () =>
 
                 // Redirect to login page after 2 seconds
                 setTimeout(() => {
-                    window.location.href = '/index.html';
+                    window.location.href = '/gaskeunbos.html';
                 }, 2000);
             } else {
                 console.log('Last username or password does not match');
