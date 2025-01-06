@@ -12,14 +12,14 @@
 
         // Your web app's Firebase configuration
         const firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            authDomain: "YOUR_AUTH_DOMAIN",
-            databaseURL: "YOUR_DATABASE_URL",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_STORAGE_BUCKET",
-            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-            appId: "YOUR_APP_ID"
-        };        
+            apiKey: "AIzaSyDAlth1sxiP-S3r3fVDXhwadVVnEvpdO6s",
+            authDomain: "login-egi-agan.firebaseapp.com",
+            databaseURL: "https://login-egi-agan-default-rtdb.firebaseio.com",
+            projectId: "login-egi-agan",
+            storageBucket: "login-egi-agan.firebasestorage.app",
+            messagingSenderId: "395059466114",
+            appId: "1:395059466114:web:5c6b0621e9739df6b5c99b"
+        };    
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
@@ -38,7 +38,7 @@
             if (!token) {
                 // Redirect to login page if token is not found
                 setTimeout(() => {
-                    window.location.href = '/index.html';
+                    window.location.href = '/gaskeunbos.html';
                 }, 2000); // 2 seconds delay
                 return;
             }
@@ -56,14 +56,14 @@
                     console.log('Token mismatch');
                     // Redirect to login page if token does not match
                     setTimeout(() => {
-                        window.location.href = '/index.html';
+                        window.location.href = 'gaskeunbos.html';
                     }, 2000); // 2 seconds delay
                 }
             } catch (error) {
                 console.error('Error:', error);
                 // Redirect to login page if an error occurs
                 setTimeout(() => {
-                    window.location.href = '/index.html';
+                    window.location.href = '/gaskeunbos.html';
                 }, 2000); // 2000 mili seconds delay
             }
         }
@@ -76,7 +76,7 @@
             // Clear the token cookie and redirect to login page
             document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
             setTimeout(() => {
-                window.location.href = '/index.html';
+                window.location.href = '/gaskeunbos.html';
             }, 500); // 500 mili seconds delay
         });
 
@@ -104,21 +104,21 @@
 
             content.innerHTML = `
                 <div class="main-image-container">
-                    <img src="/image/dashboard.jpg" alt="Dashboard Main Image" class="main-image">
+                    <img src="https://rawcdn.githack.com/egiagan/firebase-dashboard/5e3728c66304ea851e1fda20d9c968695c828017/image/dashboard.jpg" alt="Dashboard Main Image" class="main-image">
                 </div>
 
                 <div class="boxes">
                     <div class="box">
                             <h3>List User</h3>
-                            <img src="/image/list-user.jpg" id = "box-user-name" onclick="window.location.href='your-link-here' alt="List User Image" class="box-image">
+                            <img src="https://rawcdn.githack.com/egiagan/firebase-dashboard/5e3728c66304ea851e1fda20d9c968695c828017/image/list-user.jpg" id = "box-user-name" onclick="window.location.href='your-link-here' alt="List User Image" class="box-image">
                     </div>
                     <div class="box">
                             <h3>Add Fish</h3>
-                            <img src="/image/fish.jpg" id = "box-schedule" onclick="window.location.href='your-link-here' alt="Schedule Image" class="box-image" >
+                            <img src="https://rawcdn.githack.com/egiagan/firebase-dashboard/5e3728c66304ea851e1fda20d9c968695c828017/image/list-user.jpg" id = "box-schedule" onclick="window.location.href='your-link-here' alt="Schedule Image" class="box-image" >
                     </div>
                     <div class="box">
                             <h3>Food Leftovers</h3>
-                            <img src="/image/food.jpg" id = "box-food-leftovers" onclick="window.location.href='your-link-here' alt="Food Leftovers Image" class="box-image">
+                            <img src="https://rawcdn.githack.com/egiagan/firebase-dashboard/5e3728c66304ea851e1fda20d9c968695c828017/image/list-user.jpg" id = "box-food-leftovers" onclick="window.location.href='your-link-here' alt="Food Leftovers Image" class="box-image">
                         </div>
                 </div>
                 
