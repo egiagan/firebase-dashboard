@@ -38,7 +38,7 @@
             if (!token) {
                 // Redirect to login page if token is not found
                 setTimeout(() => {
-                    window.location.href = '/gaskeunbos.html';
+                    window.location.href = 'gaskeunbos.html';
                 }, 2000); // 2 seconds delay
                 return;
             }
@@ -63,7 +63,7 @@
                 console.error('Error:', error);
                 // Redirect to login page if an error occurs
                 setTimeout(() => {
-                    window.location.href = '/gaskeunbos.html';
+                    window.location.href = 'gaskeunbos.html';
                 }, 2000); // 2000 mili seconds delay
             }
         }
@@ -76,7 +76,7 @@
             // Clear the token cookie and redirect to login page
             document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
             setTimeout(() => {
-                window.location.href = '/gaskeunbos.html';
+                window.location.href = 'gaskeunbos.html';
             }, 500); // 500 mili seconds delay
         });
 
