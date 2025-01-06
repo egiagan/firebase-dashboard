@@ -56,7 +56,7 @@
                        
                        // Redirect to login page if token is not found
                        setTimeout(() => {
-                           window.location.href = '/html/loginfire.html';
+                           window.location.href = 'loginfire.html';
                        }, 2000); // 2 seconds delay
                    } else {
                        console.log('Username or password does not match');
