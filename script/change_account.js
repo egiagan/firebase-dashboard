@@ -52,7 +52,7 @@ document.getElementById('change-user-btn').addEventListener('click', async () =>
 
                 // Redirect to login page after 2 seconds
                 setTimeout(() => {
-                    window.location.href = '/gaskeunbos.html';
+                    window.location.href = 'gaskeunbos.html';
                 }, 2000);
             } else {
                 console.log('Last username or password does not match');
